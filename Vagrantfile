@@ -2,8 +2,8 @@ Vagrant::Config.run do |config|
 
 	config.vm.define "chef-server" do |chefs_config|
 
-		chefs_config.vm.box = "precise64"
-		chefs_config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+		chefs_config.vm.box = "precise32"
+		chefs_config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 		chefs_config.vm.host_name = "chefserver"
 		chefs_config.vm.forward_port 4000, 4000
 		chefs_config.vm.forward_port 4040, 4040
