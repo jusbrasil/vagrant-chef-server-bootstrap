@@ -1,5 +1,7 @@
 Vagrant::Config.run do |config|
 
+  config.vm.customize ["modifyvm", :id, "--memory", 3072]
+
 	config.vm.define "chef-server" do |chefs_config|
 
 		chefs_config.vm.box = "precise32"
